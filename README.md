@@ -12,7 +12,8 @@ About
 Instruction
 -------------------------------
 <strong>Step 0 : Select a default theme for Firefox</strong>
-I suggest choosing a pre-existing theme which won't clash with the theme you want to get : if you want the classic look, choose the default clear theme in the browser, and if you want the dark look, choose one of the dark themes available.
+<p>I suggest choosing a pre-existing theme which won't clash with the theme you want to get.</p> 
+<p>If you want the classic look, choose the default clear theme in the browser, and if you want the dark look, choose one of the dark themes available.</p>
 
 <strong>Step 1 : Create the files</strong>
 
