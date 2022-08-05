@@ -38,6 +38,10 @@ url("about:home") {
 		backdrop-filter: blur(10px) !important;
 	}
 
+	.top-sites .top-site-outer .top-site-inner > a:is(.active, :focus) .tile {
+		box-shadow: none !important;
+	}
+
 	.top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover) {
 		background: transparent !important;
 	}
@@ -63,26 +67,3 @@ url("about:home") {
 		background-color: transparent !important;
 		opacity: .3 !important;
 	}
-}
-
-.top-site-outer .context-menu-button {
-	fill: var(--primary-color) !important;
-}
-
-.top-site-outer .context-menu-button:is(:active, :focus) {
-  background-color: transparent !important;
-  opacity: .3 !important;
-}
-
-.top-sites-list:not(.dnd-active) .top-site-outer:is(:hover) .title span {
-  opacity: .7 !important;
-}
-
-.icon {
-  color: var(--primary-color) !important;
-}
-
-.personalize-button:hover {
-  background-color: transparent !important;
-  opacity: .3 !important;
-}
