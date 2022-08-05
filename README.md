@@ -5,7 +5,7 @@
 
 About
 -------------------------------
-<p>Two css scripts for <i>Mozilla Firefox<i>.</p>
+<p>Two css scripts for <i>Mozilla Firefox</i>.</p>
 <p>There are two themes available : <i>Classic</i> and <i>Dark</i>.</p>
 
 
