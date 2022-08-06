@@ -1,11 +1,11 @@
-# Firefox.userChrome.css
+# Firefox.userChrome
 
 <img src="preview_classic.png" width="100%">
 <img src="preview_dark.png" width="100%">
 
 About
 -------------------------------
-<p>Two css scripts for <i>Mozilla Firefox</i>.</p>
+<p>Several css scripts for <i>Mozilla Firefox</i>.</p>
 <p>There are two themes available : <i>Classic</i> and <i>Dark</i>.</p>
 
 
