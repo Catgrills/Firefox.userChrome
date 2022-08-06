@@ -1,4 +1,4 @@
-# Firefox.userChrome
+# Firefox.userChrome.css
 
 <img src="preview_classic.png" width="100%">
 <img src="preview_dark.png" width="100%">
@@ -29,7 +29,7 @@ Instruction
 <li> Move the files in this folder.</li>
 </ol>
 
-<strong>Step 3 : Install the font </strong>
+<strong>Step 3 : Install the fonts </strong>
 
 I use several fonts for my userchrome.
 <ol>
