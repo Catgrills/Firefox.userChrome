@@ -5,10 +5,12 @@
 
 Changelog
 -------------------------------
-14/08/22 :
+<strong>14/08/22 :</strong>
+<ol>
 <li>Re-add min/max/restore buttons in the titlebar;</li> 
 <li>Change the hovering effects in the search suggestions box, in the history/bookmark/library sidebar and in the download popup;</li>
 <li>Change the positionning of the actions buttons of the urlbar.</li>
+</ol>
 
 About
 -------------------------------
