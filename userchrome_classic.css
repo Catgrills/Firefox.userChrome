@@ -549,6 +549,11 @@ dialog,
   margin-top: .5px !important;
 }
 
+#nav-bar #page-action-buttons hbox:not(#star-button-box) {
+  margin-top: 1px !important;
+  margin-right: 8px !important;
+}
+
 #nav-bar #urlbar-zoom-button {
   background-color: var(--bg-3) !important;
   border: 1px solid var(--border-color) !important;
@@ -558,6 +563,7 @@ dialog,
   width: 50px !important;
   padding: 0px 0px 1px 0px !important;
   margin-top: 6px !important;
+  margin-left: -2px !important;
 }
 
 #zoom-reset-button {
