@@ -1,4 +1,4 @@
-#urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
+urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
   border: none !important;
 }
 
@@ -8,16 +8,16 @@
   font-style: italic !important;
 }
 
-.urlbarView-row:not([type="tip"], [type="dynamic"])[selected] > .urlbarView-row-inner {
-  background: transparent !important;
-  color: var(--primary-color) !important;
+#urlbar .urlbarView .urlbarView-row-inner {
+  padding: 5px 8px 7px 8px !important;
 }
 
+.urlbarView-row:not([type="tip"], [type="dynamic"])[selected] > .urlbarView-row-inner,
 .urlbarView-row:not([type=tip], [type=dynamic], [has-buttons]):hover > .urlbarView-row-inner,
 .urlbarView-row[has-buttons] > .urlbarView-row-inner:not([selected]):hover {
-  background-color: transparent !important;
+  background-color: var(--bg-3) !important;
+  border-radius: 3px !important;
   color: var(--primary-color) !important;
-  opacity: var(--opacity);
 }
 
 .urlbarView-row[label]::before {
@@ -194,38 +194,6 @@ toolbar .toolbarbutton-1:not([disabled="true"]):is([open], [checked], :hover:act
   color: var(--secondary-color) !important;
 }
 
-.downloadsPanelFooterButton:hover,
-#downloadsListBox > richlistitem[state="1"][exists].hoveringMainArea:hover,
-#downloadsListBox > richlistitem.openWhenFinished.hoveringMainArea:hover,
-#downloadsListBox > richlistitem[verdict]:hover,
-#downloadsListBox > richlistitem.openWhenFinished:hover {
-  background-color: transparent !important;
-}
-
-.downloadButton {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.downloadButton:hover {
-  background: transparent !important;
-  opacity: var(--opacity) !important;
-}
-
-#downloadsListBox > richlistitem[selected],
-#downloadsListBox:focus > richlistitem[selected] {
-  background: transparent !important;
-  background-image: none !important;
-  outline: none !important;
-  outline-offset: 0 !important;
-  -moz-outline-radius: 0 !important;
-}
-
-#downloadsListBox:focus > richlistitem[selected] * {
-  color: var(--secondary-color) !important;
-}
-
 menupopup {
 
   /*** POPUP ***/
@@ -358,8 +326,14 @@ panelview .toolbarbutton-1,
   outline: none !important;
 }
 
-treechildren::-moz-tree-row(hover) {
-  color: var(--secondary-color) !important;
+treechildren::-moz-tree-row(hover),
+treechildren::-moz-tree-row(selected) {
+  background: var(--bg-2) !important;
+}
+
+treechildren::-moz-tree-cell-text(hover),
+treechildren::-moz-tree-cell-text(selected) {
+  color: var(--primary-color) !important;
 }
 
 treechildren::-moz-tree-row(selected, current, focus) {
@@ -396,9 +370,6 @@ dialog,
 }
 
 .search-one-offs,
-.titlebar-min,
-.titlebar-max,
-.titlebar-restore,
 .titlebar-spacer,
 #appMenu-fxa-status2,
 #appMenu-fxa-separator,
@@ -420,12 +391,21 @@ dialog,
   border-bottom: 1px solid var(--border-color) !important;
 }
 
+.titlebar-min {
+  margin: -3px -7px 0px 0px !important;
+}
+
+.titlebar-max,
+.titlebar-restore {
+  margin: -4px -8px 0px 0px !important;
+}
+
 .titlebar-close {
   margin: -4px 1px 0px 0px !important;
 }
 
-.titlebar-close:hover {
-  background: transparent !important;
+.titlebar-button:hover {
+  background-color: transparent !important;
   opacity: var(--opacity) !important;
 }
 
@@ -590,6 +570,25 @@ dialog,
   margin-top: 2px !important;
 }
 
+#urlbar-search-mode-indicator {
+  background-color: var(--bg-3) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 2px !important;
+  color: var(--primary-color) !important;
+  font-weight: bold !important;
+  padding-bottom: 2 px !important;
+  margin-top: 1px !important;
+}
+
+#urlbar-search-mode-indicator-close {
+  margin-top: 1px !important;
+}
+
+#urlbar-search-mode-indicator-close:hover {
+  background-color: transparent !important;
+  color: var(--secondary-color) !important;
+}
+
 #searchbar {
   background-color: var(--bg-5) !important;
   border: 1px solid var(--border-color) !important;
@@ -731,14 +730,47 @@ splitter {
 }
 
 .sidebar-placesTreechildren::-moz-tree-row(hover) {
-  background-color: transparent !important;
+  background-color: var(--bg-2) !important;
 }
 
 .sidebar-placesTreechildren::-moz-tree-cell-text(hover) {
   background-color: transparent !important;
-  color: var(--secondary-color) !important;
 }
 
 .sidebar-placesTreechildren::-moz-tree-row(selected) {
   background-color: var(--bg-2) !important;
+}
+
+/* DOWNLOAD */
+
+/** DESCRIPTION : change the elements of the download page **/
+#downloadsListBox{
+  border: none !important;
+}
+
+.downloadsPanelFooterButton:hover,
+#downloadsListBox > richlistitem[state="1"][exists].hoveringMainArea:hover,
+#downloadsListBox > richlistitem.openWhenFinished.hoveringMainArea:hover,
+#downloadsListBox > richlistitem[verdict]:hover,
+#downloadsListBox > richlistitem.openWhenFinished:hover {
+  background-color: var(--bg-2) !important;
+}
+
+.downloadButton {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.downloadButton:hover {
+  background-color: var(--bg-2) !important;
+}
+
+#downloadsListBox > richlistitem[selected],
+#downloadsListBox:focus > richlistitem[selected] {
+  background-color: var(--bg-2) !important;
+  background-image: none !important;
+  outline: none !important;
+  outline-offset: 0 !important;
+  -moz-outline-radius: 0 !important;
 }
