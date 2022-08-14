@@ -3,6 +3,10 @@
 <img src="preview_classic.png" width="100%">
 <img src="preview_dark.png" width="100%">
 
+Changelog
+-------------------------------
+14/08/22 : re-add min/max/restore buttons in the titlebar; change the hovering effects in the search suggestions box, in the history/bookmark/library sidebar and in the download popup.
+
 About
 -------------------------------
 <p>Several css scripts for <i>Mozilla Firefox</i>.</p>
