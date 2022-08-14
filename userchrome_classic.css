@@ -1,4 +1,4 @@
-urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
+#urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
   border: none !important;
 }
 
