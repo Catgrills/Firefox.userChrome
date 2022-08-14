@@ -2,6 +2,10 @@
   border: none !important;
 }
 
+#urlbar[open] > #urlbar-background {
+  box-shadow: none !important;
+}
+
 #urlbar .urlbarView .urlbarView-url,
 #urlbar .urlbarView .urlbarView-action {
   font-size: 11pt !important;
